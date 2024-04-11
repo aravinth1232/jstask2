@@ -1,0 +1,390 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-image: url("https://images.pexels.com/photos/3435249/pexels-photo-3435249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    /* background-image: url("https://images.pexels.com/photos/1789968/pexels-photo-1789968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+ position: relative;
+}
+
+
+
+
+.popup{
+    width: 300px;
+    /* border: 2px solid aliceblue; */
+    position: absolute;
+    top: -40%;
+    left: 5%;
+    transform: scale(0);
+    transition: .5s;
+    visibility: hidden;
+    background-color: rgb(255, 2555, 255,0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.popup h1{
+    color: rgb(89, 241, 89);
+    /* border: 2px solid aliceblue; */
+}
+
+.popup h1:hover{
+    color: rgba(89, 241, 89);
+}
+.popup a{
+    color: rgb(89, 241, 89);
+}
+
+.popup a:hover{
+    color: rgba(89, 241, 89, 0.644);
+}
+
+.open-slide{
+    /* top: -30%;
+    left: 10%;  */
+    transform: scale(1);
+    visibility: visible;
+}
+
+h1{
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+h1:hover{
+    color: aliceblue;
+}
+
+
+.yot{
+    padding: 0em 0em 0.5em 1em;
+    font-size: 1em;
+    color: rgb(247, 110, 110);
+    
+    animation-name: keys;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+
+@keyframes keys {
+    0%{
+        transform: translateX(0px);
+    }
+    40%{
+        transform: translateX(2px);
+    }
+    80%{
+        transform: translateX(-4px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
+
+
+.result{
+    /* border: 2px solid aliceblue; */
+    padding: 0em 0em 0.5em 1em;
+    font-size: 1em;
+    color: rgb(247, 110, 110);
+    color: transparent;
+    animation-name: useee;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+@keyframes useee {
+    0%{
+        transform: translateX(0px);
+    }
+    40%{
+        transform: translateX(2px);
+    }
+    80%{
+        transform: translateX(-4px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
+
+.all{
+    /* border: 2px solid black; */
+    background-color: rgb(255, 2555, 255,0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:stretch;
+    /* border-radius: 40px 40px 10px 10px; */
+    border-radius: 20px;
+    padding: 0em 0.5em 0em 0.5em;
+   
+ 
+}
+
+.my{
+    padding: 0.5rem 1rem 1rem 1rem ;
+    /* border: 2px solid grey; */
+   
+
+    
+    /* border: 6px solid black; */
+
+}
+
+.my i{
+    font-size: 1.2em;
+    color: gray;
+}
+
+.my i:hover{
+    color: aliceblue;
+
+}
+
+
+
+.my input{
+    background-color: rgb(255, 2555, 255,0.1);
+    /* backdrop-filter: blur(2px); */
+    /* color: transparent; */
+ 
+    color: aliceblue;
+    /* border: 2px solid grey; */
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    padding: 0em 0em 0em 0.8em;
+    /* margin: 0em 0em 0.5em 0em; */
+    /* margin: 0.5em 0em 0.5em 0em; */
+
+    /* border: 2px solid grey; */
+}
+
+.new .erro{
+    /* border: 2px solid grey; */
+    /* padding: 1em 1em 1em 0em; */
+    color: rgb(238, 129, 129);
+    font-weight: 500;
+    padding: 0.1em 0em 0em 1em;
+    color: transparent;
+    
+}
+
+.new .succ{
+    /* border: 2px solid grey; */
+    color: rgb(86, 228, 68);
+    font-weight: 600;
+    padding: 0.1em 0em 0.1em 1em;
+    /* display: none; */
+}
+
+
+
+
+.but{
+    display: flex;
+    /* width: auto; */
+    justify-content: center;
+    align-self: stretch;
+    padding: 1em 0em;
+    
+}
+.first{
+    /* margin: 0em 0em 0em 0em; */
+    border-radius: 40px;
+    border-bottom: 2px solid aliceblue;
+    border-color: gray;
+    /* padding: 1em 1em; */
+}
+
+.first:hover{
+    border-color: aliceblue;
+}
+
+
+.first:active{
+    border-color: aliceblue;
+}
+
+button{
+    width: 80%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid aliceblue;
+    border-radius: 40px;
+    padding: 0.5em 0em 0.5em 0em;
+    color: aliceblue;
+    color:gray;
+
+    font-size: 1em;
+    font-weight: bolder;
+    /* border-bottom: 2px solid aliceblue; */
+    border-color:gray ;
+}
+
+button:hover{
+    color: aliceblue;
+    cursor: pointer;
+    border-color: aliceblue;
+}
+
+button:active{
+    color: gray;
+    border-color: gray;
+}
+
+
+input:active{
+    outline: none;
+    background-color: transparent;
+
+}
+
+
+
+input:focus{
+    /* background-color: aliceblue; */
+    /* border: none; */
+    outline: none;
+    background-color: transparent;
+    /* background-color: transparent; */
+}
+
+.links{
+    /* border: 6px solid black; */
+    display: flex;
+    /* width: auto; */
+    justify-content: space-between;
+    align-self: stretch;
+    
+}
+
+
+
+a{
+    color: gray;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+}
+a:active{
+    color: gray;
+}
+
+
+
+
+@media only screen and (max-width: 425px) and (min-width:10px) {
+   
+
+    body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        background-image: url("https://images.pexels.com/photos/3435249/pexels-photo-3435249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        /* background-image: url("https://images.pexels.com/photos/1789968/pexels-photo-1789968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;
+        /* border: 2px solid black; */
+   }
+    
+   
+.my{
+    padding: 0.5rem 1rem 1rem 1rem ;
+    /* border: 2px solid grey; */
+   
+
+    
+    /* border: 6px solid black; */
+
+}
+
+.my i{
+    font-size: 1em;
+    color: gray;
+}
+
+.my i:hover{
+    color: aliceblue;
+
+}
+
+
+
+.my input{
+    background-color: rgb(255, 2555, 255,0.1);
+    /* backdrop-filter: blur(2px); */
+    /* color: transparent; */
+ 
+    color: aliceblue;
+    /* border: 2px solid grey; */
+    background-color: transparent;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.1em;
+    padding: 0em 0em 0em 0.8em;
+    /* margin: 0em 0em 0.5em 0em; */
+    /* margin: 0.5em 0em 0.5em 0em; */
+
+    /* border: 2px solid grey; */
+}
+
+.new .erro{
+    /* border: 2px solid grey; */
+    /* padding: 1em 1em 1em 0em; */
+    color: rgb(238, 129, 129);
+    font-weight: 500;
+    padding: 0.3em 0em 0em 1em;
+    color: transparent;
+    
+}
+
+.new .succ{
+    /* border: 2px solid grey; */
+    color: rgb(86, 228, 68);
+    font-weight: 600;
+    padding: 0.3em 0em 0.1em 1em;
+    /* display: none; */
+}
+
+
+   
+}

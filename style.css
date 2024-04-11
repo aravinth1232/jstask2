@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    background-image: url("https://images.pexels.com/photos/3435249/pexels-photo-3435249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    /* background-image: url("https://images.pexels.com/photos/1789968/pexels-photo-1789968.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); */
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+    
+   
+    /* border: 2px solid black; */
+  
+}
+
+.header{
+
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    padding: 2em 0em;
+
+}
+
+.header h1{
+    color: aliceblue;
+
+}
+
+.one ul{
+    /* border: 2px solid aliceblue; */
+    color: aliceblue;
+    display: flex;
+
+}
+
+.one ul li {
+    list-style-type: none;
+    /* border: 2px solid aliceblue; */
+    padding: 0em 1.5em;
+     
+}
+
+.one ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    /* border: 2px solid aliceblue; */
+    font-size: 1.5em;   
+}
+
+.one ul li a:hover{
+    text-decoration: underline;
+}
+
+
+
+.header button,
+.sidenav{
+    display: none;
+}
+
+
+main{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 1em;
+    gap: 20px;
+    flex-wrap: wrap;
+    
+
+
+}
+
+.card{
+    width: 30vw;
+    color: aliceblue;
+    /* border: 2px solid black; */
+    padding: 1em 1em;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    
+
+    h1{
+        display: flex;
+        justify-content: center;   
+    }
+
+    p{
+        text-align: justify;
+    }
+}
+
+.card:hover{
+    background-color: aliceblue;
+    color: rgb(67, 33, 219);
+}
+
+
+
+
+@media only screen and (max-width: 768px){
+    
+main{
+    z-index: -888;
+}
+
+
+.card{
+    width: 40vw;
+    color: aliceblue;
+    /* border: 2px solid black; */
+    padding: 1em 1em;
+    backdrop-filter: blur(20px);
+    border-radius: 30px;
+    z-index: -77 ;
+    
+
+    h1{
+        display: flex;
+        justify-content: center;   
+    }
+}
+
+.one{
+
+    display: none;
+}
+
+.header button{
+    display: flex;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+body{
+    position: relative;
+}
+
+i{
+    color: aliceblue;
+}
+
+
+.sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* position: absolute; */
+    
+    top: 0;
+    left: -60%;
+    
+    width: 60%;
+    height: 100vh;
+    background-color: black;
+    z-index: 1000;
+    position: fixed;
+    transition: 0.8s;
+    /* border: 2px solid aliceblue; */
+}
+
+
+
+.sidenav ul{
+    /* border: 2px solid aliceblue; */
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.sidenav ul li {
+    list-style-type: none;
+    /* border: 2px solid aliceblue; */
+    padding: 0.5em 1em;
+     
+}
+
+.sidenav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    /* border: 2px solid aliceblue; */
+    font-size: 1.5em;   
+   
+}
+
+.sidenav button{
+    display: flex;
+    align-self: flex-start;
+    margin: 30px 10px 0px 70px ;
+    /* border: 2px solid aliceblue; */
+}
+
+
+}
+
+
+@media only screen and (max-width: 455px){
+
+
+
+    .card{
+        width: 70vw;
+        color: aliceblue;
+        /* border: 2px solid black; */
+        padding: 1em 1em;
+        backdrop-filter: blur(20px);
+        border-radius: 30px;
+        z-index: -77 ;
+        
+    
+        h1{
+            display: flex;
+            justify-content: center;   
+        }
+    }
+
+
+
+
+    .sidenav button{
+        display: flex;
+        align-self: flex-start;
+        margin: 30px 10px 0px 0px ;
+        /* border: 2px solid aliceblue; */
+    }
+
+
+
+
+
+}
