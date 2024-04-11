@@ -209,6 +209,14 @@ i{
     /* border: 2px solid aliceblue; */
 }
 
+.sidenav i{
+    color: black;
+}
+
+.sidenav i:hover{
+    color: rgba(0, 0, 0, 0.459);
+    cursor: pointer;
+}
 
 }
 
@@ -248,3 +256,4 @@ i{
 
 
 }
+
